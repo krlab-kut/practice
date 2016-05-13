@@ -1,0 +1,8 @@
+<h2>タイトル</h2>
+<p><%= @note.title %></p>
+<h2>内容</h2>
+<p><%= @note.content %></p>
+
+<%= link_to "編集", edit_note_path(@note.id), class: "btn edit-btn" %>
+<!-- destroyアクションへのリンクを追加してください -->
+<%= link_to "削除", destroy_note_path(@note.id), method: "delete", class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？" %>

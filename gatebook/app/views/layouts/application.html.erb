@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gatebook</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div id="logo">Gatebook</div>
+      <ul class="header-right">
+        <li><%= link_to "Top", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "New", notes_new_path %></li>
+        <li><%= link_to "Index", notes_path %></li>
+      </ul>
+    </div>
+  </header>
+  
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <div class="container">
+    <footer class="footer">
+      <div class="small">
+        &copy; 2015 Progate, Inc.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

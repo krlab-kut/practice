@@ -1,0 +1,8 @@
+<h1>投稿を編集する</h1>
+<%= form_tag update_note_path(@note.id), method: 'patch' do %>
+  タイトル
+  <%= text_field_tag :title, @note.title, class: "form-control title-field" %>
+  内容
+  <%= text_area_tag :content, @note.content, class: "form-control content-field" %>
+  <%= submit_tag "保存", class: "btn primary-btn" %>
+<% end %>

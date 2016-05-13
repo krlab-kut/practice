@@ -1,0 +1,99 @@
+/* 共通レイアウト ================================ */
+body {
+  padding-top: 60px;
+  color: #364a4d;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1f89e2;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1b7ccd;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* フォント ================================ */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+/* ヘッダー ================================ */
+.navbar {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  margin-bottom: 20px;
+}
+
+#logo {
+  float: left;
+  font-size: 27px;
+  color: #fff;
+  padding-top: 12px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+  margin: 0 auto;
+}
+
+.header-right a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.header-right li {
+  line-height: 65px;
+  padding: 0 18px;
+  float: left;
+  color: white;
+}
+
+/* フッター ================================ */
+footer {
+  margin-top: 100px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #848484;
+}
+
+footer .small {
+  float: left;
+  font-size: 14px;
+}
